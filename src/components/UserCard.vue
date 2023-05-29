@@ -6,7 +6,8 @@
       <friends-button
         :friendsState="user.friends"
         @changeFriendsState="$emit('changeFriendsStatus', user.id)"
-      />
+        >{{ user.friends ? "➖ " : "➕ " }}</friends-button
+      >
     </div>
   </li>
 </template>
