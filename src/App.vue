@@ -1,6 +1,8 @@
 <template>
   <BaseHeader>
-    <h1>User Profile App</h1>
+    <template #title>
+      <h1>User Profile App</h1>
+    </template>
   </BaseHeader>
   <BaseLayout>
     <users-list />
