@@ -5,3 +5,10 @@
     <div class="column"><slot name="subtitle-right"></slot></div>
   </div>
 </template>
+
+<style scoped>
+.columns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+</style>
