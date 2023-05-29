@@ -1,16 +1,20 @@
 <template>
-  <header>
+  <BaseHeader>
     <h1>User Profile App</h1>
-  </header>
-  <main>
+  </BaseHeader>
+  <BaseLayout>
     <users-list />
-  </main>
+  </BaseLayout>
 </template>
 
 <script>
+import BaseHeader from "@/components/layout/BaseHeader.vue";
+import BaseLayout from "@/components/layout/BaseLayout.vue";
 import UsersList from "@/components/UsersList.vue";
 export default {
   components: {
+    BaseHeader,
+    BaseLayout,
     UsersList,
   },
 };
